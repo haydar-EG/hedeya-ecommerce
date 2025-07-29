@@ -302,7 +302,7 @@ This project is licensed under the MIT License.
 ## Support
 
 For support or questions, please contact:
-- Email: hello@hedeya.sa
+- Email: kido@land.eg
 - Phone: +966 11 234 5678
 
 ---
