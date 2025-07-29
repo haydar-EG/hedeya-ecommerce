@@ -1,4 +1,4 @@
-// API configuration and utilities for the Hedeya frontend
+// API configuration and utilities for the Kido Land frontend
 
 const API_BASE_URL = 'http://localhost:3001/api';
 
@@ -17,7 +17,7 @@ export const api = {
     };
 
     // Add authorization header if token exists
-    const token = localStorage.getItem('hedeya_token');
+    const token = localStorage.getItem('kido_land_token');
     if (token) {
       config.headers.Authorization = `Bearer ${token}`;
     }
@@ -148,8 +148,8 @@ export const authApi = {
     
     // Store token if registration successful
     if (response.success && response.data.token) {
-      localStorage.setItem('hedeya_token', response.data.token);
-      localStorage.setItem('hedeya_user', JSON.stringify(response.data.user));
+      localStorage.setItem('kido_land_token', response.data.token);
+      localStorage.setItem('kido_land_user', JSON.stringify(response.data.user));
     }
     
     return response;
@@ -161,8 +161,8 @@ export const authApi = {
     
     // Store token if login successful
     if (response.success && response.data.token) {
-      localStorage.setItem('hedeya_token', response.data.token);
-      localStorage.setItem('hedeya_user', JSON.stringify(response.data.user));
+      localStorage.setItem('kido_land_token', response.data.token);
+      localStorage.setItem('kido_land_user', JSON.stringify(response.data.user));
     }
     
     return response;
@@ -179,7 +179,7 @@ export const authApi = {
     
     // Update stored token if refresh successful
     if (response.success && response.data.token) {
-      localStorage.setItem('hedeya_token', response.data.token);
+      localStorage.setItem('kido_land_token', response.data.token);
     }
     
     return response;
@@ -191,20 +191,20 @@ export const authApi = {
       await api.post('/auth/logout');
     } finally {
       // Remove token and user data regardless of API response
-      localStorage.removeItem('hedeya_token');
-      localStorage.removeItem('hedeya_user');
+      localStorage.removeItem('kido_land_token');
+      localStorage.removeItem('kido_land_user');
     }
   },
 
   // Get current user from localStorage
   getCurrentUser() {
-    const userStr = localStorage.getItem('hedeya_user');
+    const userStr = localStorage.getItem('kido_land_user');
     return userStr ? JSON.parse(userStr) : null;
   },
 
   // Check if user is logged in
   isLoggedIn() {
-    return !!localStorage.getItem('hedeya_token');
+    return !!localStorage.getItem('kido_land_token');
   },
 };
 

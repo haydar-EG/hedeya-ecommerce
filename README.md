@@ -1,8 +1,8 @@
-# Hedeya E-commerce Platform
+# Kido Land E-commerce Platform
 
 A modern, full-stack e-commerce platform for baby and mother essentials, built with React, Express.js, and modern web technologies.
 
-![Hedeya Logo](https://via.placeholder.com/150x50/ff69b4/ffffff?text=Hedeya)
+![Kido Land Logo](https://via.placeholder.com/150x50/ff69b4/ffffff?text=Kido+Land)
 
 ## 🌟 Features
 

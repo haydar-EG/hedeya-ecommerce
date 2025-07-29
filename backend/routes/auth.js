@@ -7,7 +7,7 @@ const router = express.Router();
 let users = [
   {
     id: 1,
-    email: 'admin@hedeya.com',
+    email: 'admin@kidoland.com',
     password: '$2a$10$rQX.n7.X7QJ7X9X7X7X7X.X7X7X7X7X7X7X7X7X7X7X7X7X7X7X7X7X', // bcrypt hash of 'admin123'
     firstName: 'Admin',
     lastName: 'User',
@@ -18,7 +18,7 @@ let users = [
 let userIdCounter = 2;
 
 // JWT Secret (in production, use environment variable)
-const JWT_SECRET = process.env.JWT_SECRET || 'hedeya_secret_key_2024';
+const JWT_SECRET = process.env.JWT_SECRET || 'kido_land_secret_key_2024';
 
 // Helper function to generate JWT token
 const generateToken = (user) => {

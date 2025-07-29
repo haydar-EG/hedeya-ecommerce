@@ -1,6 +1,6 @@
-# Hedeya Backend API
+# Kido Land Backend API
 
-A RESTful API server for the Hedeya e-commerce platform built with Express.js and Node.js.
+A RESTful API server for the Kido Land e-commerce platform built with Express.js and Node.js.
 
 ## Features
 
@@ -93,7 +93,7 @@ A RESTful API server for the Hedeya e-commerce platform built with Express.js an
 | `NODE_ENV` | Application environment | `development` |
 | `PORT` | Server port | `3001` |
 | `FRONTEND_URL` | Frontend URL for CORS | `http://localhost:5500` |
-| `JWT_SECRET` | JWT signing secret | `hedeya_secret_key_2024` |
+| `JWT_SECRET` | JWT signing secret | `kido_land_secret_key_2024` |
 | `JWT_EXPIRES_IN` | JWT expiration time | `24h` |
 
 ### Project Structure

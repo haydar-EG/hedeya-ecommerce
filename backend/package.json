@@ -1,7 +1,7 @@
 {
-  "name": "hedeya-backend",
+  "name": "kido-land-backend",
   "version": "1.0.0",
-  "description": "Backend API for Hedeya E-commerce Website",
+  "description": "Backend API for Kido Land E-commerce Website",
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
@@ -12,10 +12,10 @@
     "ecommerce",
     "express",
     "api",
-    "hedeya",
+    "kido-land",
     "backend"
   ],
-  "author": "Hedeya Team",
+  "author": "Kido Land Team",
   "license": "MIT",
   "dependencies": {
     "bcryptjs": "^2.4.3",

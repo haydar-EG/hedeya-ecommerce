@@ -4,7 +4,7 @@ require('dotenv').config();
 // Database configuration
 const config = {
   development: {
-    database: process.env.DB_NAME || 'hedeya_dev',
+    database: process.env.DB_NAME || 'kido_land_dev',
     username: process.env.DB_USER || 'postgres',
     password: process.env.DB_PASSWORD || 'password',
     host: process.env.DB_HOST || 'localhost',
@@ -19,7 +19,7 @@ const config = {
     }
   },
   test: {
-    database: process.env.DB_NAME_TEST || 'hedeya_test',
+    database: process.env.DB_NAME_TEST || 'kido_land_test',
     username: process.env.DB_USER || 'postgres',
     password: process.env.DB_PASSWORD || 'password',
     host: process.env.DB_HOST || 'localhost',

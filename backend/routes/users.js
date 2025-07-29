@@ -16,7 +16,7 @@ const verifyToken = (req, res, next) => {
   }
 
   try {
-    const decoded = jwt.verify(token, process.env.JWT_SECRET || 'hedeya_secret_key_2024');
+    const decoded = jwt.verify(token, process.env.JWT_SECRET || 'kido_land_secret_key_2024');
     req.user = decoded;
     next();
   } catch (error) {

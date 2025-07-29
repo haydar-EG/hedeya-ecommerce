@@ -1,5 +1,5 @@
 @echo off
-echo Starting Hedeya E-commerce Website...
+echo Starting Kido Land E-commerce Website...
 echo.
 
 REM Set execution policy for this session

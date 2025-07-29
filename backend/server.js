@@ -51,7 +51,7 @@ app.use('/api/users', require('./routes/users'));
 // Root endpoint
 app.get('/', (req, res) => {
   res.json({
-    message: 'Hedeya Backend API is running!',
+    message: 'Kido Land Backend API is running!',
     version: '1.0.0',
     status: 'active',
     endpoints: {
@@ -110,7 +110,7 @@ const startServer = async () => {
     
     // Start the server
     app.listen(PORT, () => {
-      console.log(`🚀 Hedeya Backend Server is running on port ${PORT}`);
+      console.log(`🚀 Kido Land Backend Server is running on port ${PORT}`);
       console.log(`📊 Environment: ${process.env.NODE_ENV || 'development'}`);
       console.log(`🌐 API URL: http://localhost:${PORT}`);
       console.log(`💻 Frontend URL: http://localhost:5500`);
