@@ -62,7 +62,20 @@ A modern, full-stack e-commerce platform for baby and mother essentials, built w
 
 5. **Start the development servers:**
 
-   **Option 1: Start both servers manually**
+   **Option 1: Using Make (Recommended for Unix/Linux/macOS)**
+   ```bash
+   # Complete setup in one command
+   make setup
+
+   # Start both servers
+   make dev
+
+   # Or start servers individually
+   make dev-frontend    # Frontend only
+   make dev-backend     # Backend only
+   ```
+
+   **Option 2: Start both servers manually**
    ```bash
    # Terminal 1 - Frontend (Vite dev server)
    npm run dev
@@ -72,17 +85,44 @@ A modern, full-stack e-commerce platform for baby and mother essentials, built w
    npm run dev
    ```
 
-   **Option 2: Use VS Code tasks (if using VS Code)**
+   **Option 3: Use VS Code tasks (if using VS Code)**
    - Press `Ctrl+Shift+P` (Windows/Linux) or `Cmd+Shift+P` (Mac)
    - Type "Tasks: Run Task"
    - Select "Start Backend Server"
    - The frontend can be started with `npm run dev`
 
-5. **Access the application:**
+6. **Access the application:**
    - Frontend: http://localhost:5500
    - Backend API: http://localhost:3001
    - Health Check: http://localhost:3001/api/health
    - Database: PostgreSQL on localhost:5432
+
+## 🔧 Build & Development Tools
+
+### Makefile Commands
+For Unix/Linux/macOS users, this project includes a comprehensive Makefile with convenient commands:
+
+```bash
+make help          # Show all available commands
+make setup         # Complete project setup (install dependencies + build)
+make install       # Install all dependencies
+make build         # Build frontend for production
+make dev           # Start both frontend and backend development servers
+make dev-frontend  # Start only frontend development server
+make dev-backend   # Start only backend development server
+make start         # Start production servers
+make test          # Run tests
+make clean         # Clean build artifacts and dependencies
+make health        # Check system health and requirements
+make status        # Show running processes and port usage
+make audit         # Run security audit and fix issues
+```
+
+**Quick start with Make:**
+```bash
+make setup    # Install dependencies and build
+make dev      # Start development servers
+```
 
 ## 🗄️ Database Setup
 
